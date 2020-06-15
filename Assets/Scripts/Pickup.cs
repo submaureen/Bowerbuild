@@ -62,7 +62,7 @@ public class Pickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inRange = true;
-            // selectionText.SetText("pick up item worth " + value + " by pressing E");
+            selectionText.SetText("pick up item worth " + value + " by pressing E");
             Vector3 somePosition = new Vector3(transform.position.x, transform.position.y + 1);
             Debug.Log(somePosition);
             // somePosition = transform.InverseTransformPoint(0, 0, 0);
@@ -71,6 +71,7 @@ public class Pickup : MonoBehaviour
             Debug.Log(testPos);
             // Debug.Log(testPos);
             selectionText.transform.position = somePosition;
+            selectionText.enabled = true;
             // selectionText.enabled = true;
             // selectionText.transform.position = testPos;
             // selectionText.enabled = true;
