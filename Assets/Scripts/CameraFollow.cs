@@ -18,6 +18,8 @@ public class CameraFollow : MonoBehaviour
 
     private Rigidbody2D followRigid;
 
+    public bool shouldFollow;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,11 +54,18 @@ public class CameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
+    // fixed update is physics based means it only updates when ya moving ! 
     void FixedUpdate()
     {
-        // position of the object ! 
+        Debug.Log("here I am !");
+
+        // the thing you wanna follow
         Vector2 follow = followObject.transform.position;
 
+        if (followObject.transform.position.x > 13 || followObject.transform.position.x < -27) {
+            shouldFollow = false;
+        }
+        else {shouldFollow = true;}
         // distance between our object and center of the x - axis
         // vector2.right is shorthand for writing Vector2(1, 0) multiplied by the y of the camera's location
         // basically ur scaling it up or down
@@ -67,22 +76,28 @@ public class CameraFollow : MonoBehaviour
 
         // if the distance between our object and the center x axis is GREATER than the threshold that we have defined
         // u better change the position of camera to our object!!
-        Vector3 newPosition = transform.position;
-        if (Mathf.Abs(xDifference) >= threshold.x) {
-            newPosition.x = follow.x;
-        }
+
+        if (shouldFollow) {
+            Vector3 newPosition = transform.position;
+            if ((Mathf.Abs(xDifference) >= threshold.x))
+            {
+                newPosition.x = follow.x;
+            }
 
 
-        if (Mathf.Abs(yDifference) >= threshold.y) {
-            newPosition.y = follow.y;
-        }
+            if (Mathf.Abs(yDifference) >= threshold.y)
+            {
+                newPosition.y = follow.y;
+            }
 
-        if(followObject.GetComponent<Inventory>().value == 15) {
-            newPosition.z -= 1;
-            Debug.Log(newPosition);
+            if (followObject.GetComponent<Inventory>().value == 15)
+            {
+                newPosition.z -= 1;
+                Debug.Log(newPosition);
+            }
+            float moveSpeed = followRigid.velocity.magnitude > speed ? followRigid.velocity.magnitude : speed;
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
         }
-        float moveSpeed = followRigid.velocity.magnitude > speed ? followRigid.velocity.magnitude : speed;
-        transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed*Time.deltaTime);
 
     }
 }

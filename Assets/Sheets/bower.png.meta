@@ -38,6 +38,18 @@ TextureImporter:
   - first:
       213: -3761887100264326411
     second: bower_5
+  - first:
+      213: 8545204909967863016
+    second: bower_6
+  - first:
+      213: -7422171433877806387
+    second: bower_7
+  - first:
+      213: 2160738379122757350
+    second: bower_8
+  - first:
+      213: -2393832106137117464
+    second: bower_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -248,7 +260,7 @@ TextureImporter:
         width: 304
         height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,6 +268,90 @@ TextureImporter:
       bones: []
       spriteID: 5fade971d971bcbc0800000000000000
       internalID: -3761887100264326411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bower_6
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 272
+        width: 104
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecee87579aa69670800000000000000
+      internalID: 8545204909967863016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bower_7
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 240
+        width: 136
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc269adb7662ff890800000000000000
+      internalID: -7422171433877806387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bower_8
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 192
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4a249b1c7cfd10800000000000000
+      internalID: 2160738379122757350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bower_9
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 144
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec95cde16667ced0800000000000000
+      internalID: -2393832106137117464
       vertices: []
       indices: 
       edges: []

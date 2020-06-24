@@ -375,7 +375,7 @@ RectTransform:
   - {fileID: 1439778288}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.040000003}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 712817480}
   - component: {fileID: 712817479}
   m_Layer: 0
-  m_Name: little item
+  m_Name: flower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,7 +701,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1cd4adc208a9b143939d89590c22ec6, type: 3}
+  m_Sprite: {fileID: 2160738379122757350, guid: 713373d41b1eb1449b5ebab29166c5ab,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -720,8 +721,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712817478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.76, y: -1.96, z: 0}
-  m_LocalScale: {x: 5.9885125, y: 5.806006, z: 1}
+  m_LocalPosition: {x: 3.393, y: -1.624, z: 0}
+  m_LocalScale: {x: 1.3586655, y: 1.3375677, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -912,7 +913,7 @@ GameObject:
   - component: {fileID: 795816315}
   - component: {fileID: 795816314}
   m_Layer: 0
-  m_Name: little item (1)
+  m_Name: bottle_cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +990,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1cd4adc208a9b143939d89590c22ec6, type: 3}
+  m_Sprite: {fileID: 8545204909967863016, guid: 713373d41b1eb1449b5ebab29166c5ab,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1008,8 +1010,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795816313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -2.03, z: 0}
-  m_LocalScale: {x: 5.9885125, y: 5.806006, z: 1}
+  m_LocalPosition: {x: -5.73, y: -1.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1101,7 +1103,7 @@ GameObject:
   - component: {fileID: 1035994268}
   - component: {fileID: 1035994267}
   m_Layer: 0
-  m_Name: little item 2
+  m_Name: straw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1178,7 +1180,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7c7340a6310642640bd18747bf235f49, type: 3}
+  m_Sprite: {fileID: -2393832106137117464, guid: 713373d41b1eb1449b5ebab29166c5ab,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1197,7 +1200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035994266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: -2.11, z: 0}
+  m_LocalPosition: {x: 7.72, y: -1.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1931,7 +1934,7 @@ GameObject:
   - component: {fileID: 1535494586}
   - component: {fileID: 1535494585}
   m_Layer: 0
-  m_Name: little item (2)
+  m_Name: feather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2008,7 +2011,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1cd4adc208a9b143939d89590c22ec6, type: 3}
+  m_Sprite: {fileID: -7422171433877806387, guid: 713373d41b1eb1449b5ebab29166c5ab,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2027,8 +2031,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535494584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.69, y: -1.96, z: 0}
-  m_LocalScale: {x: 5.9885125, y: 5.806006, z: 1}
+  m_LocalPosition: {x: 0.24, y: -1.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -2323,4 +2327,5 @@ MonoBehaviour:
   followObject: {fileID: 1518778067}
   followOffset: {x: 7, y: 3}
   threshold: {x: 0, y: 0}
-  speed: 5
+  speed: 6.5
+  shouldFollow: 0
