@@ -57,12 +57,11 @@ public class CameraFollow : MonoBehaviour
     // fixed update is physics based means it only updates when ya moving ! 
     void FixedUpdate()
     {
-        Debug.Log("here I am !");
 
         // the thing you wanna follow
         Vector2 follow = followObject.transform.position;
 
-        if (followObject.transform.position.x > 13 || followObject.transform.position.x < -27) {
+        if (followObject.transform.position.x > 13 || followObject.transform.position.x < -25) {
             shouldFollow = false;
         }
         else {shouldFollow = true;}
@@ -93,7 +92,6 @@ public class CameraFollow : MonoBehaviour
             if (followObject.GetComponent<Inventory>().value == 15)
             {
                 newPosition.z -= 1;
-                Debug.Log(newPosition);
             }
             float moveSpeed = followRigid.velocity.magnitude > speed ? followRigid.velocity.magnitude : speed;
             transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);

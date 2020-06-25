@@ -13,6 +13,12 @@ public class Player_Movement : MonoBehaviour
     [SerializeField]
     private float acceleration;
 
+    [SerializeField]
+    private float fastSpeed;
+
+    [SerializeField]
+    private float walkSpeed;
+
     private Vector3 scale;
 
     private bool facingRight = true;
@@ -47,6 +53,14 @@ public class Player_Movement : MonoBehaviour
 
 
     void Move() {
+        if (Input.GetKeyDown(KeyCode.P)) 
+        {
+            Debug.Log("pressed!");
+            acceleration = fastSpeed;
+        }
+        else {
+            acceleration = walkSpeed;
+        }
         if ((horizontalInput * transform.localScale.x) < 0) {
             scale.x *= -1;
             transform.localScale = scale;
