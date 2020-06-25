@@ -38,6 +38,23 @@ public class Player_Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump")) {
             rigidboy.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
         }
+
+        if(!Input.anyKey) 
+        {
+            Vector2 slowDOWN = Vector2.zero;
+            rigidboy.velocity = slowDOWN;
+        }
+        if (Input.GetKeyDown(KeyCode.P)) 
+        {
+            Debug.Log("pressed!");
+            acceleration = fastSpeed;
+            maxSpeed = 10;
+        }
+        if (Input.GetKeyUp(KeyCode.P)) 
+        {
+            Debug.Log("RELEASED!");
+            maxSpeed = 5;
+        }
         
     }
 
@@ -53,14 +70,6 @@ public class Player_Movement : MonoBehaviour
 
 
     void Move() {
-        if (Input.GetKeyDown(KeyCode.P)) 
-        {
-            Debug.Log("pressed!");
-            acceleration = fastSpeed;
-        }
-        else {
-            acceleration = walkSpeed;
-        }
         if ((horizontalInput * transform.localScale.x) < 0) {
             scale.x *= -1;
             transform.localScale = scale;
