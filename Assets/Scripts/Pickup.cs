@@ -38,6 +38,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Pickup : MonoBehaviour
 {
@@ -51,6 +52,8 @@ public class Pickup : MonoBehaviour
 
     public TextMeshProUGUI selectionText;
     // public GameObject effect;
+
+    public Text flavorText;
 
     private void Start()
     {
@@ -76,6 +79,8 @@ public class Pickup : MonoBehaviour
             // selectionText.transform.position = testPos;
             // selectionText.enabled = true;
             Debug.Log("pickup allowed.");
+
+            flavorText.text = "awoo";
 
         }
     }

@@ -35,10 +35,6 @@ public class Player_Movement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Jump")) {
-            rigidboy.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
-        }
-
         if(!Input.anyKey) 
         {
             Vector2 slowDOWN = Vector2.zero;

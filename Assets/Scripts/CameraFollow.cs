@@ -89,10 +89,10 @@ public class CameraFollow : MonoBehaviour
                 newPosition.y = follow.y;
             }
 
-            if (followObject.GetComponent<Inventory>().value == 15)
-            {
-                newPosition.z -= 1;
-            }
+            // if (followObject.GetComponent<Inventory>().value == 15)
+            // {
+            //     newPosition.z -= 1;
+            // }
             float moveSpeed = followRigid.velocity.magnitude > speed ? followRigid.velocity.magnitude : speed;
             transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
         }
