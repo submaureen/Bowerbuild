@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class EndArea : MonoBehaviour
-{
-    public TextMeshProUGUI winner;
+{    public Text flavorText;
 
     private Inventory inventory;
 
@@ -21,44 +21,26 @@ public class EndArea : MonoBehaviour
         {
             Debug.Log("Player Be Here");
             // winner.SetActive(true);
-            winner.enabled = true;
-            winner.SetText(inventory.value.ToString());
-            Debug.Log(winner.transform.position);
             // winner.transform.position = new Vector3 (winner.transform.position.x, winner.transform.position.y + 1);
         }
 
-        if (inventory.value > 10)
-        {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Movement>().enabled = false;
-            StartCoroutine("SomeRoutine");
-        }
+
+        flavorText.text = "Press space to turn in items.";
 
     }
 
-
-
-    IEnumerator SomeRoutine()
+    private void OnTriggerExit2D(Collider2D other)
     {
-
-        //do stuff
-        Debug.Log("Am here");
-        winner.SetText("press G to resart and try again !");
-        //wait for space to be pressed
-        while (!Input.GetKeyDown(KeyCode.G))
-        {
-            yield return null;
-        }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        // Debug.Log("it's finished!");
-
-        //do stuff once space is pressed
-
+        flavorText.enabled = false;
     }
 
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay2D(Collider2D other)
     {
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(3);
 
+        }
     }
 }

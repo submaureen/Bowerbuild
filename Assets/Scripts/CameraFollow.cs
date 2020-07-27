@@ -61,7 +61,7 @@ public class CameraFollow : MonoBehaviour
         // the thing you wanna follow
         Vector2 follow = followObject.transform.position;
 
-        if (followObject.transform.position.x > 13 || followObject.transform.position.x < -25) {
+        if (followObject.transform.position.x > 107 || followObject.transform.position.x < -25) {
             shouldFollow = false;
         }
         else {shouldFollow = true;}

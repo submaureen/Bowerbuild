@@ -40,13 +40,13 @@ public class Player_Movement : MonoBehaviour
             Vector2 slowDOWN = Vector2.zero;
             rigidboy.velocity = slowDOWN;
         }
-        if (Input.GetKeyDown(KeyCode.P)) 
+        if (Input.GetKeyDown(KeyCode.LeftShift)) 
         {
             Debug.Log("pressed!");
             acceleration = fastSpeed;
             maxSpeed = 10;
         }
-        if (Input.GetKeyUp(KeyCode.P)) 
+        if (Input.GetKeyUp(KeyCode.LeftShift)) 
         {
             Debug.Log("RELEASED!");
             maxSpeed = 5;
